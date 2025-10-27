@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Mine\\key-building-app-back\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\dtos\\buildingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\dtos\\buildingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\resident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\resident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +47,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BuildingDto.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Dtos\\BuildingDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Dtos\\BuildingDto.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Dtos\\BuildingDto.cs",
+              "RelativeToolTip": "Domain\\Models\\Dtos\\BuildingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:13:26.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Resident.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Resident.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Resident.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Resident.cs",
+              "RelativeToolTip": "Domain\\Models\\Resident.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:10:14.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\BaseEntity.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:04:46.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Building.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Building.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Building.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Building.cs",
+              "RelativeToolTip": "Domain\\Models\\Building.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:59:47.297Z",
+              "EditorCaption": ""
             }
           ]
         }

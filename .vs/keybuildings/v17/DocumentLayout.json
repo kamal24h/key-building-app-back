@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Mine\\key-building-app-back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FAA405D-28BA-4C2F-A4A0-7FF7BCC12D88}|Service\\Service.csproj|d:\\mine\\key-building-app-back\\service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FAA405D-28BA-4C2F-A4A0-7FF7BCC12D88}|Service\\Service.csproj|solutionrelative:service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|d:\\mine\\key-building-app-back\\dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\dtos\\buildingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\dtos\\buildingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\resident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\resident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,28 +50,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Service\\Class1.cs",
-              "RelativeDocumentMoniker": "Service\\Class1.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\Service\\Class1.cs",
-              "RelativeToolTip": "Service\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BuildingDto.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Dtos\\BuildingDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Dtos\\BuildingDto.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Dtos\\BuildingDto.cs",
+              "RelativeToolTip": "Domain\\Models\\Dtos\\BuildingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T09:58:14.571Z",
+              "WhenOpened": "2025-10-27T10:13:26.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\Class1.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Class1.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\Class1.cs",
-              "RelativeToolTip": "DataAccess\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Resident.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Resident.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Resident.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Resident.cs",
+              "RelativeToolTip": "Domain\\Models\\Resident.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T09:57:44.85Z",
+              "WhenOpened": "2025-10-27T10:10:14.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\BaseEntity.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:04:46.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Building.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Building.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Building.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Building.cs",
+              "RelativeToolTip": "Domain\\Models\\Building.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:59:47.297Z",
               "EditorCaption": ""
             }
           ]
