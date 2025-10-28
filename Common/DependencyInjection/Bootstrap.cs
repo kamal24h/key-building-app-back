@@ -12,6 +12,7 @@ public class Bootstrap
     public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
     {
         //Data Access
+        services.AddTransient<IUnitOfWork, UnitOfWork>();
         services.AddTransient<IBuildingRepository, BuildingRepository>();
         
         //Services

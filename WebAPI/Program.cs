@@ -1,20 +1,53 @@
 using Common.Configuration;
 using Common.DependencyInjection;
 using DataAccess;
+using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<AppDbContext>();
+
+CultureInfo.DefaultThreadCurrentCulture = PersianDateExtensionMethods.GetPersianCulture();
+CultureInfo.DefaultThreadCurrentUICulture = PersianDateExtensionMethods.GetPersianCulture();
+
+
+// Add services to the container.
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+//    .AddEntityFrameworkStores<AppDbContext>();
+
+
+
+builder.Services.AddIdentityCore<AppUser>()
+           .AddRoles<IdentityRole>()
+           .AddEntityFrameworkStores<AppDbContext>()
+           .AddUserManager<UserManager<AppUser>>()
+           .AddSignInManager()
+           .AddDefaultTokenProviders();
+
+builder.Services.AddAuthenticationCore();
+builder.Services.AddAuthorizationCore();
+
+//builder.Services.AddAuthentication(o =>
+//{
+//    o.DefaultScheme = IdentityConstants.ApplicationScheme;
+//    o.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+//}).AddIdentityCookies(o => { });
+
+
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 
 // Config mappings
@@ -41,8 +74,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

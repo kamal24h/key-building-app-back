@@ -1,9 +1,11 @@
 ﻿using Domain.Models.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Models
 {
     public class Building : BaseEntity
     {
+        [Key]
         public long BuildingId { get; set; }
         public Guid BuildingGuid { get; set; }
         public string Name { get; set; }

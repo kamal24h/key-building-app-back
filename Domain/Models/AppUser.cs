@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 namespace Domain.Models
 {
     // Add profile data for application users by adding properties to the ApplicationUser class
-    public partial class AppUser : IdentityUser
+    public class AppUser : IdentityUser
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

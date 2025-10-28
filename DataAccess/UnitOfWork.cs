@@ -7,7 +7,7 @@ public class UnitOfWork(AppDbContext _dbContext) : IDisposable, IUnitOfWork
 {       
     #region Repositories
 
-    private IBuildingRepository _buildingRepository;
+    private IBuildingRepository? _buildingRepository;
     public IBuildingRepository BuildingRepository =>
         _buildingRepository = new BuildingRepository(_dbContext);
     
