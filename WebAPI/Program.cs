@@ -2,7 +2,8 @@ using Common.Configuration;
 using Common.DependencyInjection;
 using DataAccess;
 using Domain.Models;
-using Microsoft.AspNetCore.Identity;
+//using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 
@@ -21,20 +22,20 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 
 
 
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+//builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false)
 //    .AddEntityFrameworkStores<AppDbContext>();
 
 
 
-builder.Services.AddIdentityCore<AppUser>()
-           .AddRoles<IdentityRole>()
-           .AddEntityFrameworkStores<AppDbContext>()
-           .AddUserManager<UserManager<AppUser>>()
-           .AddSignInManager()
-           .AddDefaultTokenProviders();
+//builder.Services.AddDefaultIdentity<AppUser>()
+//           .AddRoles<IdentityRole>()
+//           .AddEntityFrameworkStores<AppDbContext>()
+//           .AddUserManager<UserManager<AppUser>>()
+//           .AddSignInManager()
+//           .AddDefaultTokenProviders();
 
-builder.Services.AddAuthenticationCore();
-builder.Services.AddAuthorizationCore();
+//builder.Services.AddAuthenticationCore();
+//builder.Services.AddAuthorizationCore();
 
 //builder.Services.AddAuthentication(o =>
 //{
@@ -43,8 +44,8 @@ builder.Services.AddAuthorizationCore();
 //}).AddIdentityCookies(o => { });
 
 
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-builder.Services.AddHttpContextAccessor();
+//builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+//builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
