@@ -1,5 +1,4 @@
-﻿using DataAccess.Interface;
-using Domain.Models;
+﻿using Domain.Models;
 
 namespace DataAccess.Contract;
 

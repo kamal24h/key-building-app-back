@@ -1,6 +1,6 @@
 ﻿using Domain.Models.Enums;
 
-namespace Domain.Models
+namespace Domain.Models.Dtos
 {
     public class ResidentDto : BaseDto
     {

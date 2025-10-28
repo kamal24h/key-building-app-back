@@ -1,6 +1,4 @@
 ﻿using DataAccess.Contract;
-using DataAccess.Interface;
-using LuxShop.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess;

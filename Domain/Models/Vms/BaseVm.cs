@@ -1,6 +1,6 @@
-﻿namespace Domain.Models
+﻿namespace Domain.Models.Vms
 {
-    public class BaseEntity
+    public class BaseVm
     {       
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set; }

@@ -1,7 +1,6 @@
-﻿using DataAccess.Contract;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace DataAccess.Interface;
+namespace DataAccess.Contract;
 
 public interface IUnitOfWork
 {

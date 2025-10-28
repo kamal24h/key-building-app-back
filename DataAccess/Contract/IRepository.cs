@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace DataAccess.Interface;
+namespace DataAccess.Contract;
 
 public interface IRepository<T> where T: class
 {
