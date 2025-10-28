@@ -5,14 +5,10 @@ using System.Linq.Expressions;
 
 namespace DataAccess;
 
-public class BuildingRepository : IBuildingRepository
+public class BuildingRepository(AppDbContext _dbContext) : IBuildingRepository
 {
-    private readonly AppDbContext _dbContext;
-
-    public BuildingRepository(AppDbContext dbContext) => _dbContext = dbContext;
-
+    
     #region Read
-
 
     public async Task<List<Building>> Get()
     {
@@ -66,8 +62,8 @@ public class BuildingRepository : IBuildingRepository
     }
 
     #endregion
-
-
+    
+    
     #region Internal
 
     #endregion

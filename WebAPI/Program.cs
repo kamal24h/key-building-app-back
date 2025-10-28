@@ -1,3 +1,5 @@
+using Common.Configuration;
+using Common.DependencyInjection;
 using DataAccess;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +15,13 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+// Config mappings
+MapperConfig.ConfiguerServices(builder.Services, builder.Configuration);
+// Config Dependency Injections
+Bootstrap.ConfigureService(builder.Services, builder.Configuration);
+
 
 var app = builder.Build();
 
