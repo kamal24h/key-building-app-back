@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using DataAccess.Contract;
+using System.Threading.Tasks;
 
 namespace DataAccess.Interface;
 
@@ -6,7 +7,7 @@ public interface IUnitOfWork
 {
     #region Repository Announcements
 
-    //IAccEventTypeRepository AccEventTypeRepository { get; }
+    IBuildingRepository BuildingRepository { get; }
     //IAccEventDetailRepository AccEventDetailRepository { get; }
     //ISysUserRepository SysUserRepository { get; }
 

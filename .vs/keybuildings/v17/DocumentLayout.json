@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\Mine\\key-building-app-back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|d:\\mine\\key-building-app-back\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|d:\\mine\\key-building-app-back\\domain\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E830BB2-A6D6-477C-90CA-B3E9DD1856DA}|Domain\\Domain.csproj|solutionrelative:domain\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|d:\\mine\\key-building-app-back\\dataaccess\\buildingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\buildingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|d:\\mine\\key-building-app-back\\dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|d:\\mine\\key-building-app-back\\dataaccess\\contract\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\contract\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|d:\\mine\\key-building-app-back\\dataaccess\\contract\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\contract\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|d:\\mine\\key-building-app-back\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C12C41E7-53FF-4D37-BDF9-37B82FABE8C6}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,93 +46,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\AppUser.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\AppUser.cs",
-              "RelativeToolTip": "Domain\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BuildingRepository.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\BuildingRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\BuildingRepository.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\BuildingRepository.cs",
+              "RelativeToolTip": "DataAccess\\BuildingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:43:58.476Z",
+              "WhenOpened": "2025-10-28T05:21:43.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Building.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Building.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Building.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\Domain\\Models\\Building.cs",
-              "RelativeToolTip": "Domain\\Models\\Building.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:33:28.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataAccess",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\DataAccess.csproj",
-              "RelativeDocumentMoniker": "DataAccess\\DataAccess.csproj",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\DataAccess.csproj",
-              "RelativeToolTip": "DataAccess\\DataAccess.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-28T04:25:59.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DataAccess\\AppDbContext.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\AppDbContext.cs",
-              "RelativeToolTip": "DataAccess\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:25:46.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "DataAccess\\UnitOfWork.cs",
               "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\UnitOfWork.cs",
               "RelativeToolTip": "DataAccess\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:25:10.818Z",
+              "WhenOpened": "2025-10-28T05:18:57.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\Contract\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "DataAccess\\Contract\\IUnitOfWork.cs",
               "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\Contract\\IUnitOfWork.cs",
               "RelativeToolTip": "DataAccess\\Contract\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:23:37.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\Contract\\IRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Contract\\IRepository.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\Contract\\IRepository.cs",
-              "RelativeToolTip": "DataAccess\\Contract\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T04:23:00.687Z",
+              "WhenOpened": "2025-10-28T05:18:21.978Z",
               "EditorCaption": ""
             }
           ]
