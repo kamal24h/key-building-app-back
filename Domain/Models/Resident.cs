@@ -12,6 +12,8 @@ namespace Domain.Models
         public string Family { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
+        public long UnitId { get; set; }
+        public Unit Unit { get; set; }
 
     }
 }

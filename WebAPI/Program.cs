@@ -1,11 +1,10 @@
+﻿using System.Globalization;
 using Common.Configuration;
 using Common.DependencyInjection;
 using DataAccess;
 using Domain.Models;
-//using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,32 +19,53 @@ CultureInfo.DefaultThreadCurrentUICulture = PersianDateExtensionMethods.GetPersi
 builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// ---------------------------------------------------
+// 2️ Add Identity Core Services
+// ---------------------------------------------------
+builder.Services.AddIdentity<AppUser, AppRole>(options =>
+{
+    // Password settings
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequiredLength = 6;
+
+    // Lockout settings
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+    options.Lockout.MaxFailedAccessAttempts = 5;
+
+    // User settings
+    options.User.RequireUniqueEmail = true;
+
+    // Sign-in settings
+    options.SignIn.RequireConfirmedEmail = false;
+})
+.AddEntityFrameworkStores<AppDbContext>() // link Identity to EF Core
+.AddUserManager<UserManager<AppUser>>()     // explicitly add UserManager
+.AddSignInManager<SignInManager<AppUser>>() // explicitly add SignInManager
+.AddRoleManager<RoleManager<AppRole>>()
+.AddDefaultTokenProviders(); // needed for password reset, email confirmation, etc.
+
+// ---------------------------------------------------
+// 3️⃣ Add authentication cookie configuration (optional)
+// ---------------------------------------------------
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+    options.SlidingExpiration = true;
+});
 
 
-//builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false)
-//    .AddEntityFrameworkStores<AppDbContext>();
+builder.Services.AddAuthenticationCore();
+builder.Services.AddAuthorizationCore();
 
 
 
-//builder.Services.AddDefaultIdentity<AppUser>()
-//           .AddRoles<IdentityRole>()
-//           .AddEntityFrameworkStores<AppDbContext>()
-//           .AddUserManager<UserManager<AppUser>>()
-//           .AddSignInManager()
-//           .AddDefaultTokenProviders();
-
-//builder.Services.AddAuthenticationCore();
-//builder.Services.AddAuthorizationCore();
-
-//builder.Services.AddAuthentication(o =>
-//{
-//    o.DefaultScheme = IdentityConstants.ApplicationScheme;
-//    o.DefaultSignInScheme = IdentityConstants.ExternalScheme;
-//}).AddIdentityCookies(o => { });
-
-
-//builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-//builder.Services.AddHttpContextAccessor();
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
@@ -73,6 +93,9 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseRouting();
 
