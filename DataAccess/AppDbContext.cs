@@ -4,9 +4,10 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
+
 namespace DataAccess;
 
-public class AppDbContext : DbContext //IdentityDbContext<AppUser>
+public class AppDbContext : IdentityDbContext<AppUser, AppRole, string>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
       
@@ -15,9 +16,66 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
     /* Define a DbSet for each entity of the application */
     public DbSet<Building> Buildings { get; set; }
     public DbSet<Resident> Residents { get; set; }
+    public DbSet<Unit> Units { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+
+
+        base.OnModelCreating(modelBuilder);
+
+
+        // Customize ASP.NET Core Identity table names and relationships if needed
+        modelBuilder.Entity<AppUser>(b =>
+            {
+                b.ToTable("Users");
+                b.Property(u => u.DisplayName).HasMaxLength(256);
+            });
+
+        modelBuilder.Entity<AppRole>(b =>
+            {
+                b.ToTable("Roles");
+                b.Property(r => r.Description).HasMaxLength(256);
+            });
+
+        modelBuilder.Entity<IdentityUserRole<string>>(b =>
+            {
+                b.ToTable("UserRoles");
+            });
+
+        modelBuilder.Entity<IdentityUserClaim<string>>(b =>
+            {
+                b.ToTable("UserClaims");
+            });
+
+        modelBuilder.Entity<IdentityUserLogin<string>>(b =>
+            {
+                b.ToTable("UserLogins");
+            });
+
+        modelBuilder.Entity<IdentityRoleClaim<string>>(b =>
+            {
+                b.ToTable("RoleClaims");
+            });
+
+        modelBuilder.Entity<IdentityUserToken<string>>(b =>
+            {
+                b.ToTable("UserTokens");
+            });
+
+        // Optional: Add seed data (default admin role/user)
+        modelBuilder.Entity<AppRole>().HasData(new AppRole
+            {
+                Id = "1",
+                Name = "Admin",
+                NormalizedName = "ADMIN",
+                Description = "Administrator role"
+            });
+       
+
+
+
+
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
         //{
@@ -37,7 +95,7 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
         //        .HasMaxLength(256);
 
         //    b.HasKey("Id");
-        //    b.ToTable("AspNetRoles");
+        //    b.ToTable("AppRoles");
         //});
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -61,11 +119,11 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
 
         //    b.HasIndex("RoleId");
 
-        //    b.ToTable("AspNetRoleClaims");
+        //    b.ToTable("AppRoleClaims");
         //});
 
-        //modelBuilder.Entity("AppUser", static b =>
-        //{            
+        //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
+        //{
         //    b.Property<string>("Id")
         //        .HasColumnType("nvarchar(450)");
 
@@ -118,9 +176,19 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
         //        .HasColumnType("nvarchar(256)")
         //        .HasMaxLength(256);
 
-            
+        //    b.Property<string>("FirstName")
+        //        .HasColumnType("nvarchar(50)")
+        //        .HasMaxLength(50);
 
-        //    b.ToTable("AspNetUsers");
+        //    b.Property<string>("LastName")
+        //        .HasColumnType("nvarchar(50)")
+        //        .HasMaxLength(50);
+
+        //    b.Property<string>("DisplayUserName")
+        //        .HasColumnType("nvarchar(50)")
+        //        .HasMaxLength(50);          
+
+        //b.ToTable("AppUsers");            
         //});
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -144,7 +212,7 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
 
         //    b.HasIndex("UserId");
 
-        //    b.ToTable("AspNetUserClaims");
+        //    b.ToTable("AppUserClaims");
         //});
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
@@ -168,7 +236,7 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
 
         //    b.HasIndex("UserId");
 
-        //    b.ToTable("AspNetUserLogins");
+        //    b.ToTable("AppUserLogins");
         //});
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
@@ -183,7 +251,7 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
 
         //    b.HasIndex("RoleId");
 
-        //    b.ToTable("AspNetUserRoles");
+        //    b.ToTable("AppUserRoles");
         //});
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -204,7 +272,7 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
 
         //    b.HasKey("UserId", "LoginProvider", "Name");
 
-        //    b.ToTable("AspNetUserTokens");
+        //    b.ToTable("AppUserTokens");
         //});
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -227,7 +295,7 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
 
         //modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
         //{
-        //    b.HasOne("App   ", null)
+        //    b.HasOne("AppUser")
         //        .WithMany()
         //        .HasForeignKey("UserId")
         //        .OnDelete(DeleteBehavior.Cascade)
@@ -258,29 +326,31 @@ public class AppDbContext : DbContext //IdentityDbContext<AppUser>
         //        .IsRequired();
         //});
 
-        //modelBuilder.Entity<CrmInvoiceDetail>( entity =>
-        //{
-        //    entity.HasOne(d => d.Invoice)
-        //          .WithMany(p => p.InvoiceDetails)
-        //          .HasForeignKey(d => d.InvoiceId)
-        //          .OnDelete(DeleteBehavior.NoAction)
-        //          .IsRequired();
-        //});
+        
+        
+        modelBuilder.Entity<Unit>(entity =>
+        {
+            entity.HasOne(d => d.Building)
+                  .WithMany(p => p.Units)
+                  .HasForeignKey(d => d.BuildingId)
+                  .OnDelete(DeleteBehavior.NoAction)
+                  .IsRequired();
+        });
 
-        //modelBuilder.Entity<CrmPurchaseDetail>(entity =>
-        //{
-        //    entity.HasOne(d => d.Purchase)
-        //          .WithMany(p => p.PurchaseDetails)
-        //          .HasForeignKey(d => d.PurchaseId)
-        //          .OnDelete(DeleteBehavior.NoAction)
-        //          .IsRequired();
-        //});
+        modelBuilder.Entity<Resident>(entity =>
+        {
+            entity.HasOne(d => d.Unit)
+                  .WithMany(p => p.Residents)
+                  .HasForeignKey(d => d.ResidentId)
+                  .OnDelete(DeleteBehavior.NoAction)
+                  .IsRequired();
+        });
 
-        //modelBuilder.Entity<InvItem>(entity =>
-        //{
-        //    entity.HasIndex(d => d.Code, "IX_Item_Code")
-        //          .IsUnique();               
-        //});
+        modelBuilder.Entity<Resident>(entity =>
+        {
+            entity.HasIndex(d => d.ResidentId, "IX_Resident_Id")
+                  .IsUnique();
+        });
 
 
 
