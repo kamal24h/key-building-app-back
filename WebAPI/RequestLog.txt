@@ -1,0 +1,166 @@
+Method: GET, Path: /, Body: 
+
+Method: GET, Path: /buildings/all, Body: 
+
+Method: GET, Path: /building/all, Body: 
+
+Method: GET, Path: /building/all, Body: 
+
+Method: GET, Path: /, Body: 
+
+Method: GET, Path: /building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /, Body: 
+
+Method: GET, Path: /, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /api/building/all, Body: 
+
+Method: GET, Path: /, Body: 
+
