@@ -3,8 +3,10 @@ using Common.Configuration;
 using Common.DependencyInjection;
 using DataAccess;
 using Domain.Models;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WebAPI.MiddleWare;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -61,6 +63,13 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 builder.Services.AddAuthenticationCore();
 builder.Services.AddAuthorizationCore();
+builder.Services.AddCors(option => option
+.AddPolicy("MuCorsPolicy", plc => 
+    plc.AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    
+    ));
 
 
 
@@ -91,6 +100,8 @@ else
     app.UseHsts();
 }
 
+app.UseCors("MuCorsPolicy");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -103,5 +114,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 app.Run();
