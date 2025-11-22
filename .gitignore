@@ -439,3 +439,5 @@ TestResult.xml
 nunit-*.xml
 /.vs/
 .vs
+/WebAPI/RequestLog.txt
+/WebAPI/ResponseLog.txt
