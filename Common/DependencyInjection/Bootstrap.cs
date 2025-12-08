@@ -14,10 +14,12 @@ public class Bootstrap
         //Data Access
         services.AddTransient<IUnitOfWork, UnitOfWork>();
         services.AddTransient<IBuildingRepository, BuildingRepository>();
-        
+        services.AddTransient<IResidentRepository, ResidentRepository>();
+
         //Services
         services.AddTransient<IBuildingService, BuildingService>();
-        
+        services.AddTransient<IResidentService, ResidentService>();
+
 
 
         // Add application services.

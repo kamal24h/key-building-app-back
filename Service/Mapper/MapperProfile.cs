@@ -49,7 +49,9 @@ namespace Service.Mapper
             #region Dto's Mapping
 
             BuildingDto.ConfigureMapper(this);
-            
+            UnitDto.ConfigureMapper(this);
+            ResidentDto.ConfigureMapper(this);
+
 
             #endregion
 
@@ -57,6 +59,8 @@ namespace Service.Mapper
 
             //AppUserVm.ConfigureMapper(this);
             BuildingVm.ConfigureMapper(this);          
+            UnitVm.ConfigureMapper(this);          
+            ResidentVm.ConfigureMapper(this);
 
             #endregion
         }

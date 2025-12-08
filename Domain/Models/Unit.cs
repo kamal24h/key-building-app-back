@@ -13,6 +13,7 @@ namespace Domain.Models
         public long BuildingId { get; set; }
         public Building Building { get; set; }
         public virtual List<Resident> Residents { get; set; }
+        public bool Active { get; set; }
 
     }
 }

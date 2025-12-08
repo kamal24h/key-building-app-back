@@ -2,7 +2,8 @@
 {
     public enum BuildingStatusEnum
     {
-        Initial = 1,
-        Empty = 2 
+        Active = 1,
+        Inactive = 2,
+        UnderConstruction = 3
     }
 }
