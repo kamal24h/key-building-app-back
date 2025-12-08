@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Mine\\key-building-app-back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A1646DA-ADEB-4531-9D74-119F794AE763}|Common\\Common.csproj|d:\\mine\\key-building-app-back\\common\\dependencyinjection\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A1646DA-ADEB-4531-9D74-119F794AE763}|Common\\Common.csproj|solutionrelative:common\\dependencyinjection\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Mine\\key-building-app-back\\DataAccess\\Migrations\\20251208123040_add-resident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccess\\Migrations\\20251208123040_add-resident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{227FF08C-3F2B-481C-9060-B2C8A6218015}|WebAPI\\WebAPI.csproj|d:\\mine\\key-building-app-back\\webapi\\controllers\\api\\residentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{227FF08C-3F2B-481C-9060-B2C8A6218015}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\api\\residentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A1646DA-ADEB-4531-9D74-119F794AE763}|Common\\Common.csproj|d:\\mine\\key-building-app-back\\common\\dependencyinjection\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A1646DA-ADEB-4531-9D74-119F794AE763}|Common\\Common.csproj|solutionrelative:common\\dependencyinjection\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Bootstrap.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Common\\DependencyInjection\\Bootstrap.cs",
-              "RelativeDocumentMoniker": "Common\\DependencyInjection\\Bootstrap.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\Common\\DependencyInjection\\Bootstrap.cs",
-              "RelativeToolTip": "Common\\DependencyInjection\\Bootstrap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T12:26:48.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResidentController.cs",
-              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\WebAPI\\Controllers\\API\\ResidentController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\API\\ResidentController.cs",
-              "ToolTip": "D:\\Mine\\key-building-app-back\\WebAPI\\Controllers\\API\\ResidentController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\API\\ResidentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T11:42:46.646Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -65,6 +43,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251208123040_add-resident.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\DataAccess\\Migrations\\20251208123040_add-resident.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251208123040_add-resident.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\DataAccess\\Migrations\\20251208123040_add-resident.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251208123040_add-resident.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T12:30:40.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bootstrap.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\Common\\DependencyInjection\\Bootstrap.cs",
+              "RelativeDocumentMoniker": "Common\\DependencyInjection\\Bootstrap.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\Common\\DependencyInjection\\Bootstrap.cs",
+              "RelativeToolTip": "Common\\DependencyInjection\\Bootstrap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T12:26:48.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResidentController.cs",
+              "DocumentMoniker": "D:\\Mine\\key-building-app-back\\WebAPI\\Controllers\\API\\ResidentController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\API\\ResidentController.cs",
+              "ToolTip": "D:\\Mine\\key-building-app-back\\WebAPI\\Controllers\\API\\ResidentController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\API\\ResidentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T11:42:46.646Z",
+              "EditorCaption": ""
             }
           ]
         }
